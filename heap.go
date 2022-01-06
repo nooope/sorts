@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 
 
 func buildMaxHeap(a []int)[]int{
@@ -43,18 +45,20 @@ func right (i int) int {
 
 func heapSort(a []int) []int{
 	buildMaxHeap(a)
-	/*heapLength := len(a)
-	for i := len(a); i <=2; i--{
-		swapValues(a, 1, i)
-		maxHeapify(a,1) //TODO: keep track of length
-	}*/
+	b := a
+	for i := len(a)-1; i >=0; i--{
+		swapValues(b, 0, i)
+		b = b[0:len(b)-1]
+		maxHeapify(b,0) //TODO: keep track of length
+	}
 	return a
 }
 
 
 func main() {
 	a := []int{1,2,7,3,14,20,10,4,5}
-	buildMaxHeap(a)
+	heapSort(a)
+	fmt.Println(a)
 }
 
 

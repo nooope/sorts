@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/nooope/sorts/merge"
+	"github.com/nooope/sorts/quick"
 )
 
 func main() {
 	a := []int{1, 2, 7, 3, 14, 20, 10, 4, 5}
-	merge.Sort(a)
+	quick.Sort(a)
 	fmt.Println(a)
 }

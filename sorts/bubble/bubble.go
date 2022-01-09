@@ -1,6 +1,6 @@
 package bubble
 
-import "github.com/nooope/sorts/util"
+import "github.com/nooope/algos/util"
 
 func Sort(a []int) {
 	sorted := false

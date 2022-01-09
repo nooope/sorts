@@ -1,6 +1,6 @@
 package selection
 
-import "github.com/nooope/sorts/util"
+import "github.com/nooope/algos/util"
 
 func Sort(a []int) {
 	for sortedI := 0; sortedI < len(a)-1; sortedI++ {
